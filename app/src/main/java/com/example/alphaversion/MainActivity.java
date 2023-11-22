@@ -75,12 +75,12 @@ public class MainActivity extends AppCompatActivity {
                     PasswordGoodEnough = false;
                 }
 
-                else if(eTPass.getText().length() < 4) {
+                else if(eTPass.getText().length() < 6) {
                     passStrength.setText("Low");
                     passStrength.setTextColor(getResources().getColor(R.color.Red));
                     PasswordGoodEnough = false;
                 }
-                    else if(eTPass.getText().length() >= 4 && eTPass.getText().length() < 8){
+                    else if(eTPass.getText().length() >= 6 && eTPass.getText().length() < 8){
                         passStrength.setText("Medium");
                         passStrength.setTextColor(getResources().getColor(R.color.yellow));
                         PasswordGoodEnough = true;
